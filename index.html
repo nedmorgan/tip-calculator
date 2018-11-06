@@ -1,49 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Tip Calculator</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
-</head>
-
-<body>
-
-  <head>
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
 </head>
 
-<div id="container">
-  <h1>Tip Calculator</h1>
-
-<div id="calculator">
-<form>
-      <p>Receipt Total</p>
-      <input class="input-field" id="receipt-input" type="text" name="receiptTotal" placeholder="Enter your receipt total">
-  <p>Tip Percent</p>
-      <input class="input-field" id="tip-amount" type="text" name="tipAmount" placeholder="00">
-  </form>
-  <div class="submit">
-    <button type="button" id="calculate" class="submit-button">Calculate</button>
-  </div>
-  <!--calculator tip total-->
-  <div id="totalTip">
-    <sup>$</sup><span id="tip">0.00</span>
-  </div>
-</div>
-  
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
+<body>
+  <div id="container">
+    <h1>Tip Calculator</h1>
+    <div id="calculator">
+      <form>
+        <p>Receipt Total</p>
+        <input class="input-field" id="receipt-input" type="text" name="receiptTotal" placeholder="Enter your receipt total">
+        <p>Tip Percent</p>
+        <input class="input-field" id="tip-amount" type="text" name="tipAmount" placeholder="00">
+      </form>
+      <div class="submit">
+        <button type="button" id="calculate" class="submit-button">Calculate</button>
+        <button type"button" id="reset" onclick="reset()" class="reset-button">Reset</button>
+      </div>
+      <!--calculator tip total-->
+      <div id="totalTip">
+        <sup>$</sup><span id="tip">0.00</span>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
